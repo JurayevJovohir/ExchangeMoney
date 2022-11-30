@@ -17,7 +17,7 @@ elForm.addEventListener("submit", function (evt) {
   var MoneyEur = elInputValue / EUR;
 
 
-    if (elSelect.value == 1) {
+    if (elSelect.value == 3) {
       elTitle.textContent = "1 ₽   = 184.46 so'm";
       elResult.textContent = MoneyRub.toFixed(2) + " ₽";
     } else if (elSelectValue == 0 && elInputValue == " ") {
@@ -26,7 +26,7 @@ elForm.addEventListener("submit", function (evt) {
       elTitle.textContent = "VALYUTANI TANLANG";
     }
 
-    if (elSelect.value == 2) {
+    if (elSelect.value == 1) {
       elTitle.textContent = "1 $ = 11252 so'm";
       elResult.textContent = MoneyUsd.toFixed(2) + " $";
     } else if (elSelectValue == 0 && elInputValue == " ") {
@@ -35,7 +35,7 @@ elForm.addEventListener("submit", function (evt) {
       elTitle.textContent = "VALYUTANI TANLANG";
     }
 
-    if (elSelect.value == 3) {
+    if (elSelect.value == 2) {
       elTitle.textContent = "1 € = 11686 so'm";
       elResult.textContent = MoneyEur.toFixed(2) + " €";
     } else if (elSelectValue == 0 && elInputValue == " ") {
