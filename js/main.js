@@ -12,9 +12,9 @@ elForm.addEventListener("submit", function (evt) {
   evt.preventDefault();
   var elInputValue = +elInput.value;
   var elSelectValue = +elSelect.value;
-  var MoneyRub = elInputValue * RUB;
-  var MoneyUsd = elInputValue * USD;
-  var MoneyEur = elInputValue * EUR;
+  var MoneyRub = elInputValue / RUB;
+  var MoneyUsd = elInputValue / USD;
+  var MoneyEur = elInputValue / EUR;
 
 
     if (elSelect.value == 1) {
